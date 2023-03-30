@@ -13,7 +13,7 @@ Before you install a code repository on your PC, you will need to have the follo
 ## Fllow below steps to install repository
 
 1) The first step is to select specific folder and clone a reposritory on your PC. 
-2) After clone the reposrity open project folder in VSCode.
+2) After clone the reposrity open project folder (Meet-Kakadiya-IS24-full-stack-competition-req97073) in VSCode.
 3) Open terminal in VSCode. slect Terminal > New Terminal and run below code.
 
 # Backend APIs
