@@ -58,7 +58,7 @@ cd front
 
 Run below code to install all required libraries for the Frontend
 ```cmd
-npm install --save   // need to change
+npm install --save 
 ```
 
 Starting the application, run below code if it asked for running different port then press YES or Y in terminal. it will change the port to 3001.

@@ -61,7 +61,7 @@ export function FormComponent(props) {
       Developers,
       scrumMasterName,
       startDate,
-      methodology: methodology?.value,
+      methodology: methodology,
     };
     axios
       .post(url, new_data)
@@ -78,6 +78,7 @@ export function FormComponent(props) {
       });
   };
 
+  //handle Edit Function
   const handleEdit = () => {
     const url = `http://localhost:3000/api/user/${data.productId}`;
     const new_data = {
@@ -87,7 +88,7 @@ export function FormComponent(props) {
       Developers: Developers,
       scrumMasterName: scrumMasterName,
       startDate: startDate,
-      methodology: methodology?.value,
+      methodology: methodology,
     };
     axios
       .put(url, new_data)
@@ -104,6 +105,8 @@ export function FormComponent(props) {
       });
   };
 
+
+  // Form Validations
   const validation = () => {
     if(productName == ''){
       setAlert({success:false, msg:'Please enter product name.'})
@@ -204,7 +207,7 @@ export function FormComponent(props) {
               ? optionList.find((x) => x.value === methodology)
               : methodology
           }
-          onChange={setMethodology}
+          onChange={(e)=>{setMethodology(e.value)}}
           required
         />
       </div>
