@@ -73,8 +73,3 @@ http://localhost:3001/
 ## Conclusion
 
 After that runing http://localhost:3001/ the react app will start and you can see data tables on the screen and you can perfomes All oprations in the applications.
-
-
-
-
-
